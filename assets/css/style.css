@@ -1,52 +1,137 @@
 body{
   margin: 0;
+  border-style: solid;
+  border-color: white;
+}
+
+#nav-bar {
+  position: fixed;
+
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: space-around;
+  /*border-style: solid;*/
+  margin: 2% 0 4% 0;
+}
+
+
+#About:visited, #About:link, #Work:visited, #Work:link {
+  color: black;
+  text-decoration: none;
+}
+
+#About:hover, #Work:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 #title {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 48px;
-
-  float: left;
-  margin: 12px 0 0 60px;
-
-}
-
-#nav-bar {
-  font-family: 'Poppins', sans-serif;
-  font-weight: normal;
   font-size: 20px;
-  float: right;
-  width: 200px;
-  margin: 30px 60px 0 60px;
-
+  margin: 0 0 0 10px;
+  /*border-style: solid;*/
 }
 
 #About {
-  padding: 0 12px 0 0;
+  display: inline-block;
+  margin: 0 2% 0 48%;
+}
+
+#Work {
+  display: inline-block;
+  margin: 0 16% 0 0;
 }
 
 #About-me {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 80px 0 0 0;
+  margin: 10% 5% 0 5%;
+  /*border-style: solid;*/
 }
 
 #profile-pic {
-  height: auto;
-  width: auto/2;
+  height: 30%;
   max-width: 300px;
-  max-height: 400px;
-  border-radius: 0px;
-  padding-left: 20px;
+  max-height: 300px;
+  border-radius: 50%;
 }
 
-p {
+
+#greeting {
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-size: 28px;
-  width: 250px;
-  line-height: 40px;
+  font-weight: bold;
+  margin: 4% 0 2% 0;
+  padding: 2% 0 0 0;
+  /*border-style: solid;*/
+}
 
+#bio {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  width: 100%;
+  max-width: 800px;
+  line-height: 40px;
+}
+
+#scroll {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 4% 0 0 0;
+}
+
+#intro {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  width: 100%;
+  max-width: 800px;
+  line-height: 40px;
+  margin: 4% 0 10% 0;
+}
+
+#projects {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+
+  padding: 6% 0 0 0;
+}
+
+#Work-exp {
+  height: 500px;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 8%;
+  grid-row-gap: 16%;
+  margin: 4% 20% 16% 20%;
+}
+
+#Bearmaps {
+  border-style: solid;
+}
+
+#Tilegame {
+  border-style: solid;
+}
+
+#Spirit-Redesign {
+  border-style: solid;
+}
+
+#Design-for-America {
+  border-style: solid;
 }
